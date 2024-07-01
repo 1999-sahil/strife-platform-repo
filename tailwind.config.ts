@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 import { withUt } from "uploadthing/tw";
-import "@uploadthing/react/styles.css";
 
 const config = {
     darkMode: ["class"],
@@ -9,6 +8,7 @@ const config = {
       './components/**/*.{ts,tsx}',
       './app/**/*.{ts,tsx}',
       './src/**/*.{ts,tsx}',
+      './node_modules/@uploadthing/react/dist/**/*.{js,ts,jsx,tsx}',
       ],
     prefix: "",
     theme: {

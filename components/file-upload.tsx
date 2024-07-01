@@ -18,7 +18,6 @@ export const FileUpload = ({
 } : FileUploadProps) => {
 
     const fileType = value?.split(".").pop();
-    console.log("FileT Type", fileType);
 
     // see the image which we uploaded.
     if (value && fileType !== "pdf") {
@@ -43,7 +42,7 @@ export const FileUpload = ({
 
     return (
         <UploadDropzone
-            className="bg-gray-100"
+            className="bg-gray-100 cursor-pointer ut-button:bg-[#20b2aa] ut-label:text-[#20b2aa] ut-label:underline ut-label:hover:text-gray-600"
             endpoint={endpoint}
             onClientUploadComplete={(res) => {
                 onChange(res?.[0].url);
