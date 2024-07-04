@@ -5,7 +5,7 @@ export const initialProfile = async () => {
     const user = await currentUser();
 
     if (!user) {
-        return redirectToSignIn();
+        return auth().redirectToSignIn();
     }
 
     // Check if a profile already exists for the current user
