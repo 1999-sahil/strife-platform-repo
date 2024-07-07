@@ -5,7 +5,6 @@ import {
 
 const isProtectedRoute = createRouteMatcher([
   '/get-started',
-  //'/api/uploadThing',
 ]);
 
 export default clerkMiddleware((auth, req) => {
