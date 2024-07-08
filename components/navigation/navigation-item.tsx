@@ -48,6 +48,7 @@ export const NavigationItem = ({
                         fill
                         src={imageUrl}
                         alt="Channel"
+                        className="bg-white p-1 dark:bg-transparent"
                     />
                 </div>
             </button>
