@@ -22,7 +22,7 @@ interface ServerMemberProps {
 };
 
 const roleIconMap = {
-    [MemberRole.GUEST]: <UserRoundCheck className="h-4 w-4 ml-2 text-gray-800 dark:text-gray-600" />,
+    [MemberRole.GUEST]: <UserRoundCheck className="h-4 w-4 ml-2 text-gray-800 dark:text-gray-500" />,
     [MemberRole.MODERATOR]: <ShieldCheck className="h-4 w-4 ml-2 text-indigo-500" />,
     [MemberRole.ADMIN] : <Crown className="h-4 w-4 ml-2 text-yellow-600" />,
 };

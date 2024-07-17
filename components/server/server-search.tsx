@@ -85,7 +85,7 @@ export const ServerSearch = ({
                         if (!data?.length) return null;
 
                         return (
-                            <>
+                            <div key={label}>
                                 <CommandGroup 
                                     key={label} 
                                     heading={label}
@@ -102,8 +102,8 @@ export const ServerSearch = ({
                                         )
                                     })}
                                 </CommandGroup>
-                                <CommandSeparator />
-                            </>
+                                <CommandSeparator key={`${label}-seperator`} />
+                            </div>
                         )
                     })}
                 </CommandList>
