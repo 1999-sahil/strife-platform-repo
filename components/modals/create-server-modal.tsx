@@ -40,8 +40,6 @@ export const CreateServerModal = () => {
     const { isOpen, onClose, type } = useModal();
     const router = useRouter();
 
-    console.log("create-server-modal rendered!")
-
     const isModalOpen = isOpen && type === "createServer";
 
     const form = useForm({

@@ -8,8 +8,6 @@ export const NavigationAction = () => {
 
     const { onOpen } = useModal();
 
-    console.log("Navigation action rendered!")
-
     return (
         <div>
             <ActionTooltip
