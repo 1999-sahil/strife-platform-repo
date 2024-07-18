@@ -6,7 +6,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { NavigationSidebar } from "@/components/navigation/navigation-sidebar";
+import NavigationSidebar from "@/components/navigation/navigation-sidebar";
 import { ServerSidebar } from "@/components/server/server-sidebar";
 
 export const MobileToggle = ({
