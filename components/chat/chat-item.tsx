@@ -10,8 +10,17 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { Member, MemberRole, Profile } from "@prisma/client";
-import { Crown, FilePenLine, FileCheck2, ShieldCheck, Trash, UserRoundCheck } from "lucide-react";
+import { useModal } from "@/hooks/use-modal-store";
 import { cn } from "@/lib/utils";
+import {
+    Crown,
+    FilePenLine,
+    FileCheck2,
+    ShieldCheck,
+    Trash,
+    UserRoundCheck
+} from "lucide-react";
+
 import { UserAvatar } from "@/components/user-avatar";
 import { ActionTooltip } from "@/components/action-tooltip";
 import {
@@ -63,7 +72,8 @@ export const ChatItem = ({
 }: ChatItemProps) => {
 
     const [isEditing, setIsEditing] = useState(false);
-    const [isDeleting, setIsDeleting] = useState(false);
+
+    const { onOpen } = useModal();
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -98,6 +108,9 @@ export const ChatItem = ({
             });
 
             await axios.patch(url, values);
+
+            form.reset();
+            setIsEditing(false);
         } catch (error) {
             console.log(error);
         }
@@ -230,7 +243,13 @@ export const ChatItem = ({
                         </ActionTooltip>
                     )}
                     <ActionTooltip label="Delete">
-                        <Trash className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-red-500 transition" />
+                        <Trash
+                            onClick={() => onOpen("deleteMessage", {
+                                apiUrl: `${socketUrl}/${id}`,
+                                query: socketQuery,
+                            })}
+                            className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-red-500 transition"
+                        />
                     </ActionTooltip>
                 </div>
             )}
