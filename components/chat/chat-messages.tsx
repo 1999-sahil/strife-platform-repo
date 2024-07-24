@@ -61,6 +61,7 @@ export const ChatMessages = ({
         paramValue,
     });
 
+    // chat-socket-hook for real time communication
     useChatSocket({ queryKey, addKey, updateKey });
 
     if (status === "pending") {
