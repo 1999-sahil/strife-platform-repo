@@ -95,7 +95,7 @@ const ChannelIdPage = async ({
                 <MediaRoom
                     chatId={channel.id}
                     video={true}
-                    audio={false}
+                    audio={true}
                 />
             )}
         </div>

@@ -39,7 +39,7 @@ export default async function handler(
                         memberTwo: {
                             profileId: profile.id,
                         }
-                    },
+                    }
                 ],
             },
             include: {
@@ -52,15 +52,15 @@ export default async function handler(
                     include: {
                         profile: true,
                     }
-                },
-            }
+                }
+            } 
         });
 
         if (!conversation) {
             return res.status(404).json({ error: "Conversation not found" });
         }
 
-        const member = conversation.memberOne.profileId === profile.id ? conversation.memberOne : conversation.memberTwo;
+        const member = conversation.memberOne.profileId === profile.id ? conversation.memberOne : conversation.memberTwo; 
 
         if (!member) {
             return res.status(404).json({ error: "Member not found" });
@@ -136,14 +136,14 @@ export default async function handler(
             });
         }
 
-        const updateKey = `chat:${conversationId}:messages:update`;
+        const updateKey = `chat:${conversation.id}:messages:update`;
 
         res?.socket?.server?.io?.emit(updateKey, directMessage);
 
         return res.status(200).json(directMessage);
 
     } catch (error) {
-        console.log("[MESSAGE_ID]", error);
+        console.log("[DIRECT_MESSAGE_ID]", error);
         return res.status(500).json({ error: "Internal Error" });
     }
 }

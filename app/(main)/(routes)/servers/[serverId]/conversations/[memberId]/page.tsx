@@ -64,7 +64,7 @@ const MemberIdPage = async ({
         serverId={params.serverId}
         type="conversation"
       />
-
+      
       {searchParams.video && (
         <MediaRoom
           chatId={conversation.id}
@@ -75,7 +75,7 @@ const MemberIdPage = async ({
 
       {!searchParams.video && (
         <>
-            <ChatMessages
+          <ChatMessages
             member={currentMember}
             name={otherMember.profile.name}
             chatId={conversation.id}
