@@ -1,19 +1,16 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Footer } from "./_components/footer";
 import Navbar from "./_components/home-navbar";
 import HomePage from "./_components/homePage";
 
+
 export default function Page () {
     return (
-        <div className="w-full h-full bg-white dark:bg-black">
+        <div className="w-full h-full flex flex-col justify-between bg-white dark:bg-black">
             <Navbar />
-            <HomePage />
+            <div className="px-10 bg-white dark:bg-black">
+                <HomePage />
+            </div>
+            <Footer />
         </div>
     )
 } 
-
-{/**
-    <Link href="/get-started">
-            <Button>Get Started</Button>
-            </Link>
-    */}
