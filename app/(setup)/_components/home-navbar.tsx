@@ -25,9 +25,9 @@ const Navbar = () => {
                     alt="logo"
                     width={40}
                     height={40}
-                    className="pb-1"
+                    className="pb-1 max-md:w-[30px] max-md:h-[30px]"
                 />
-                <h2 className="font-bold text-xl">#Strife</h2>
+                <h2 className="font-bold text-base md:text-xl">#Strife</h2>
             </Link>
 
             {/** middle navigation */}
@@ -39,13 +39,13 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="flex items-center gap-x-1 md:gap-x-2">
+            <div className="flex items-center gap-x-[2px] md:gap-x-2">
                 <ModeToggle />
                 <Link href="/get-started">
-                    <Button variant="link" className="font-medium">Log in</Button>
+                    <Button variant="link" className="font-medium text-xs md:text-sm">Log in</Button>
                 </Link>
                 <Link href="/get-started">
-                    <Button className="rounded-full font-bold text-white dark:text-gray-800">Open Strife</Button>
+                    <Button className="rounded-full font-bold text-xs md:text-sm text-white dark:text-gray-800">Open Strife</Button>
                 </Link>
             </div>
         </div>

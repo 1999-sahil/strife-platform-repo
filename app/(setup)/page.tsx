@@ -7,7 +7,7 @@ export default function Page () {
     return (
         <div className="w-full h-full flex flex-col justify-between bg-white dark:bg-black">
             <Navbar />
-            <div className="px-10 bg-white dark:bg-black">
+            <div className="px-10 py-5 bg-white dark:bg-black">
                 <HomePage />
             </div>
             <Footer />
