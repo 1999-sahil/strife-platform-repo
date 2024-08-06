@@ -1,8 +1,8 @@
 ![favicon](https://github.com/user-attachments/assets/bc1acd1e-3d85-43ed-8816-0e1574458d72)
 
 
-# STRIFE - Group chat that's all fun
-An end-to-end full-stack application and real-time #strife app with all servers, channels, video calls, audio calls, editing , deleting messages and manage members role (admin, guest, moderator).
+# [STRIFE](https://66b2418c622d020859e58536--strife-platform.netlify.app/) - Group chat that's all fun
+An end-to-end full-stack application and real-time #strife app with all servers, channels, video calls, audio calls, editing , deleting messages and manage members role (admin, guest, moderator). You can check out live demo of the application by clicking [here](https://66b2418c622d020859e58536--strife-platform.netlify.app/)
 
 ## Getting Started
 The fastest way to get started with #Strife i sby following these steps.
