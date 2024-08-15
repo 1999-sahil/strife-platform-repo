@@ -31,12 +31,19 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Application Images
+
+#### SQL Database Design
+![db-design](https://github.com/user-attachments/assets/071193e0-6f83-4a1e-8fcc-eeae6b3fae49)
 #### Home page (Light Mode)
 ![main-l](https://github.com/user-attachments/assets/f270d670-27b0-4f8e-ab9e-c8d024e073b0)
 #### Home page (Dark Mode)
 ![main-d](https://github.com/user-attachments/assets/aa402e07-092d-46c4-b6e3-98b98cc1d333)
-#### SQL Database Design
-![db-design](https://github.com/user-attachments/assets/071193e0-6f83-4a1e-8fcc-eeae6b3fae49)
+#### After Creating Server
+![strife1](https://github.com/user-attachments/assets/8210d60b-63b8-4515-9a88-4cb6da1baa9a)
+#### Audio and Video Channel
+![strife](https://github.com/user-attachments/assets/88c59f2a-b2c4-46b5-943b-0868402d8e68)
+#### Fully Responsive and models for different tasks
+![strife2](https://github.com/user-attachments/assets/6ed093b7-3583-46d9-89c4-a41851bfe6ba)
 
 ## Key Features of the Strife application
 * ⏱️ Real-time messaging using Socket.io
