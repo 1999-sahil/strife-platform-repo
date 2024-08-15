@@ -38,6 +38,25 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 #### SQL Database Design
 ![db-design](https://github.com/user-attachments/assets/071193e0-6f83-4a1e-8fcc-eeae6b3fae49)
 
+## Key Features of the Strife application
+* ⏱️ Real-time messaging using Socket.io
+* : Send attachments as messages using UploadThing
+* Delete and Edit messages in real-time for all users
+* Create Text, Audio, Video call channels
+* 1:1 conversation between members
+* 1:1 video call between members
+* Member management [Kick member, Role-change (Guest/Moderator)]
+* Unique invite link generation and full working invite system
+* Infinite loading for messages in batches of 10 using @tanstack/query
+* Server creation and customization
+* Beautiful User-interface (UI) using Tailwind CSS abd Shadcn-UI
+* Full responsivity and mobile UI
+* Light and Dark mode theme
+* Websocket fallback: Polling with alerts
+* ORM using Prisma
+* MySql database using @tiDb Cloud
+* Authentication with Clerk
+
 
 ## Built With
 * [Nextjs](https://nextjs.org/) - A react.js framework
