@@ -75,6 +75,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 * [tanstack-query](https://tanstack.com/query/latest) - A library used for data retrieval and catching in modern web apps.
 * [uploadThing](https://uploadthing.com/) - An open-source tool that streamlines the process of adding file upload features to full-stack typescript applications
 * [clerk-auth](https://clerk.com/) - An authetication platform providing login via passwords, social providers, one-time email/SMS codes.
+* [LiveKit](https://docs.livekit.io/home/get-started/intro-to-livekit/) - LiveKit is a realtime platform that enables developers to build video, voice, and data capabilities into their applications. Building on WebRTC, it supports a broad range of frontend and backend platforms.
 
 
 ## Deployement
